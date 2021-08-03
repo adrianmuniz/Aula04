@@ -8,11 +8,10 @@ public class Ex07 {
 		
 		System.out.println("Você tem a chance de passar uma noite no castelo da princesa Javarella!! Basta acertar o número de feijões no jarro.");
 		
-		while (feijoesNoJarro != 1238) {
+		do {
 			System.out.println("Quantos feijoes tem no Jarro? ");
 			feijoesNoJarro = leitor.nextInt();
-		}
-
+		}while (feijoesNoJarro != 1238);
 		System.out.println("ACERTOU! Bem vindo ao Javarella rsrs");
 	}
 
