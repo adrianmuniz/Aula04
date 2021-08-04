@@ -17,17 +17,16 @@ public class Ex08 {
 		while (qtde <= 50) {
 			System.out.println("Informe a nota do º" + qtde + " aluno:");
 			nota = leitor.nextDouble();
-			if (nota > media) {
-				aprovados = aprovados + 1;
+			if (nota >= media) {
+				aprovados++;
 				
 			}else {
-				reprovados = reprovados + 1;
+				reprovados++;
 			}
 			qtde++;
 		}
 		
-		System.out.println("Alunos acima da média: " + aprovados);
-		System.out.println("Alunos acima da média: " + reprovados);
+		System.out.println("Nessa turma. alunos acima da média " + aprovados + " e alunos abaixo da média " + reprovados);
 	}
 
 }
