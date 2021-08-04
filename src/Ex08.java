@@ -9,6 +9,7 @@ public class Ex08 {
 		double media, nota = 0.0;
 		int qtde = 1;
 		int aprovados = 0;
+		int reprovados = 0;
 		
 		System.out.println("Qual a media da turma? ");
 		media = leitor.nextDouble();
@@ -18,11 +19,15 @@ public class Ex08 {
 			nota = leitor.nextDouble();
 			if (nota > media) {
 				aprovados = aprovados + 1;
+				
+			}else {
+				reprovados = reprovados + 1;
 			}
-			qtde = qtde + 1;
+			qtde++;
 		}
 		
 		System.out.println("Alunos acima da média: " + aprovados);
+		System.out.println("Alunos acima da média: " + reprovados);
 	}
 
 }
